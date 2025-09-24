@@ -3,107 +3,417 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio [Nama Anda]</title>
+    <title>Portofolio Stefanus Marcellino</title>
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-        <a href="#" class="logo">[Nama Anda]</a>
-        <nav class="navbar">
-            <a href="#hero">Home</a>
-            <a href="#about">Tentang Saya</a>
-            <a href="#projects">Proyek</a>
-            <a href="#contact">Kontak</a>
-        </nav>
-    </header>
+    <header>
+    <div class="container">
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#home">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <i class="fa-regular fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#project">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Project</span>
+                </a>
+            </li>
+            <li>
+                <a href="#certification">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certification</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</header>
 
     <main>
-        <section id="hero" class="hero">
+        <section class="hero-section" id="home">
             <div class="hero-content">
-                <img src="images/your-photo.jpg" alt="Foto Profil Anda" class="profile-img">
-                <h1>Halo, saya [Nama Lengkap Anda]</h1>
-                <p class="job-title">Saya seorang <span class="highlight">Web Developer</span> & <span class="highlight">UI/UX Enthusiast</span></p>
-                <p class="hero-description">Saya bersemangat menciptakan aplikasi web yang fungsional, modern, dan ramah pengguna.</p>
-                <a href="#projects" class="btn">Lihat Karya Saya</a>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">Tentang Saya</h2>
-                <div class="about-content">
-                    <p>
-                        Saya adalah seorang profesional yang berfokus pada pengembangan web dengan pengalaman dalam teknologi front-end dan back-end. Saya suka memecahkan masalah dan belajar hal-hal baru di dunia teknologi. Saat ini, saya sedang mendalami [Sebutkan teknologi yang sedang dipelajari, misal: React Native atau Machine Learning].
-                    </p>
-                    <div class="skills">
-                        <h3>Keahlian Utama:</h3>
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>React.js / Vue.js</li>
-                            <li>Node.js</li>
-                            <li>SQL & NoSQL</li>
-                            <li>Git & GitHub</li>
-                        </ul>
-                    </div>
+                <span class="status-tag">Available for work</span>
+                <h1>Hi, I'm Stefanus Marcellino</h1>
+                <h2 id="role-typing"><span></span></h2>
+                <p>
+                    5th-semester Computer Science student at Bina Nusantara University majoring in Database Technology. Interested in both Data Analysis and Internet of Things (IoT).
+                </p>
+                <div class="info-line">
+                    <span><i class="fa-solid fa-location-dot"></i> Tangerang, Indonesia</span>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Proyek Saya</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <img src="images/project1.jpg" alt="Gambar Proyek 1">
-                        <h3>Aplikasi E-commerce</h3>
-                        <p>Sebuah platform e-commerce modern yang dibangun dengan MERN Stack (MongoDB, Express, React, Node.js).</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank">Live Demo</a>
-                            <a href="#" target="_blank">Kode GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/project2.jpg" alt="Gambar Proyek 2">
-                        <h3>Landing Page Perusahaan</h3>
-                        <p>Desain landing page yang responsif dan menarik untuk profil perusahaan, dibuat dengan HTML, CSS, dan JavaScript.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank">Live Demo</a>
-                            <a href="#" target="_blank">Kode GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/project3.jpg" alt="Gambar Proyek 3">
-                        <h3>Aplikasi To-Do List</h3>
-                        <p>Aplikasi manajemen tugas sederhana dengan fitur otentikasi pengguna, dibangun menggunakan Vue.js dan Firebase.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank">Live Demo</a>
-                            <a href="#" target="_blank">Kode GitHub</a>
-                        </div>
-                    </div>
+                <div class="button-group">
+                    <a href="#project" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://drive.google.com/file/d/1TLhHibZVP8jdmx7CgUecQiEd-LyCoe-J/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        Download CV    <i class="fa-solid fa-download"></i>
+                    </a>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Hubungi Saya</h2>
-                <p>Tertarik untuk bekerja sama? Jangan ragu untuk menghubungi saya melalui platform di bawah ini.</p>
                 <div class="social-links">
-                    <a href="mailto:emailanda@example.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://linkedin.com/in/usernameanda" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/usernameanda" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <span>Follow me:</span>
+                    <a href="https://www.linkedin.com/in/stefanus-marcellino" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/4CeL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/stefanusmarcellino/?hl=en"><i class="fa-brands fa-instagram"></i></a>
                 </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/foto.jpg" alt="Foto Profil Hizkia Siahaan">
             </div>
         </section>
     </main>
+    <section id="about" class="about-section">
+    <div class="about-image">
+        <img src="/images/foto.jpg" alt="Foto Profil Hizkia Siahaan">
+    </div>
 
-    <footer class="footer">
-        <p>&copy; 2025 [Nama Anda]. Dibuat dengan ❤️ dan semangat.</p>
-    </footer>
+    <div class="about-content">
+        <h4>About Me</h4>
+        <p>
+             5th-semester student pursuing a degree in Database Technology with a strong passion for Data Analysis and the Internet of Things (IoT). My academic foundation in managing and structuring data has naturally led me to explore how that data can be analyzed to uncover insights and how it's generated by connected devices. I am a natural problem-solver who is always eager to learn new technologies and methodologies
+        </p>
 
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fa-regular fa-user"></i>
+                <div>
+                    <span class="info-label">Nama</span>
+                    <span class="info-value">Stefanus Marcellino</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <span class="info-label">Domisili</span>
+                    <span class="info-value">Tangerang, Indonesia</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                    <span class="info-label">Jurusan</span>
+                    <span class="info-value">Computer Science (Bina Nusantara University)</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                    <span class="info-label">Email</span>
+                    <span class="info-value">stefanusmarcellino18@gmail.com</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <span class="info-label">Phone</span>
+                    <span class="info-value">+62 858-8235-9794</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-regular fa-circle-check"></i>
+                <div>
+                    <span class="info-label">Status</span>
+                    <span class="info-value">Available for Work</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="interests-focus">
+            <h5>Interests & Focus</h5>
+            <div class="tags-container">
+                <span class="tag">Data Analysis</span>
+                <span class="tag">IoT</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Web Technologies</span>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="https://drive.google.com/file/d/1TLhHibZVP8jdmx7CgUecQiEd-LyCoe-J/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-solid fa-download"></i> Download CV
+            </a>
+            <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-solid fa-download"></i> Download Portofolio
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills-section">
+    <div class="section-header">
+        <h2>Skills</h2>
+        <p>A collection of tools and technologies I'm proficient in, helping me build and deliver high-quality web applications.</p>
+    </div>
+
+    <div class="skills-container">
+
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-code"></i> Frontend Development</h4>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-js skill-icon js-icon"></i>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-server"></i> Backend Development</h4>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <i class="fa-brands fa-node-js skill-icon node-icon"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-php skill-icon php-icon"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-database skill-icon sql-icon"></i>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-category-card">
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Technologies</h4>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <i class="fa-brands fa-git-alt skill-icon git-icon"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-github skill-icon github-icon"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-figma skill-icon figma-icon"></i>
+                    <span>Figma</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="project" class="project-section">
+    <div class="section-header">
+        <h2>My Projects</h2>
+        <p>Berikut adalah beberapa proyek yang pernah saya kerjakan, baik proyek akademis maupun personal.</p>
+    </div>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="/images/Willify.png" alt="Gambar Proyek 1">
+            <div class="card-content">
+                <span class="project-date">June 2024</span>
+                <h3>Willify</h3>
+                <p class="project-description">
+                    Willify is a responsive web application I developed as an individual project for my Human-Computer Interaction class, designed to provide an interface for discovering music and viewing lyrics.
+                </p>
+                <div class="card-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#" class="btn btn-secondary"><i class="fa-brands fa-google-drive"></i> Drive</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x250/4A5568/FFFFFF?text=Project+Image" alt="Gambar Proyek 2">
+            <div class="card-content">
+                <span class="project-date">September 2025</span>
+                <h3>Aplikasi Analisis Data</h3>
+                <p class="project-description">
+                    Proyek ini bertujuan untuk menganalisis data penjualan menggunakan Python dan library Pandas, dengan visualisasi data menggunakan Matplotlib.
+                </p>
+                <div class="card-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#" class="btn btn-secondary"><i class="fa-brands fa-google-drive"></i> Drive</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="/images/Willify.png" alt="Gambar Proyek 3">
+            <div class="card-content">
+                <span class="project-date">Juli 2025</span>
+                <h3>Website Portofolio V1</h3>
+                <p class="project-description">
+                    Versi pertama dari website portofolio pribadi yang dibuat menggunakan HTML, CSS, dan JavaScript murni untuk menampilkan proyek dan keahlian.
+                </p>
+                <div class="card-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#" class="btn btn-secondary"><i class="fa-brands fa-google-drive"></i> Drive</a>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+<section id="certification" class="certification-section">
+    <div class="section-header">
+        <h2>Licenses & Certifications</h2>
+        <p>Berikut adalah sertifikasi relevan yang telah saya peroleh.</p>
+    </div>
+
+    <div class="certification-container">
+        <div class="cert-card">
+            <div class="cert-logo">
+                <img src="/images/serti.png" alt="Logo Lembaga">
+            </div>
+            <div class="cert-content">
+                <h3>Building Conversational AI Applications</h3>
+                <p class="cert-issuer">Diterbitkan oleh NVIDIA · Aug 2025</p>
+                <div class="cert-button">
+                    <a href="https://learn.nvidia.com/certificates?id=AZ0QTvmoQPKPOqaXjbRK1A" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Tampilkan Kredensial
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>I'm open to discussing your project, collaborating on new ideas, or just having a chat about technology.</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h4>Connect With Me</h4>
+            <p>Feel free to reach out through my social media profiles. Let's connect and build something great together!</p>
+            <div class="social-cards">
+                <a href="#" class="social-card">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <div>
+                        <h5>LinkedIn <span>Stefanus Marcellino</span></h5>
+                        <p>Connect with me professionally and see my career journey.</p>
+                    </div>
+                </a>
+                <a href="#" class="social-card">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h5>Github <span>4CeL</span></h5>
+                        <p>Check out my latest projects and open-source contributions.</p>
+                    </div>
+                </a>
+                 <a href="#" class="social-card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <div>
+                        <h5>Instagram <span>@stefanusmarcellino</span></h5>
+                        <p>Behind the scenes of my development journey.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h4>Contact Form</h4>
+            <p>Have a project in mind? Send me a message and I'll get back to you as soon as possible.</p>
+            <form action="#" class="contact-form">
+                <h5>Send Me a Message</h5>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="name-form" type="text" id="name" name="name" placeholder="Your full name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="email-form" type="email" id="email" name="email" placeholder="youremail@example.com">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Inquiry, collaboration, etc.">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, requirements, timeline, and budget..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa-regular fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Portfolio</h4>
+            <p>Passionate developer creating innovative solutions and beautiful experiences. Let's build something amazing together.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <div class="quick-links-grid">
+                <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about"><i class="fa-regular fa-user"></i> About</a>
+                <a href="#project"><i class="fa-solid fa-briefcase"></i> Projects</a>
+                <a href="#skills"><i class="fa-solid fa-puzzle-piece"></i> Skills</a>
+                <a href="#certification"><i class="fa-solid fa-certificate"></i> Certification</a>
+                <a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h4>Get in Touch</h4>
+            <div class="touch-info">
+                <p><i class="fa-regular fa-envelope"></i> stefanusmarcellino18@gmail.com</p>
+                <p><i class="fa-regular fa-circle-check"></i> Stefanus Marcellino</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Portfolio Stefanus Marcellino.</p>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+    <script src="script.js"></script>
 </body>
 </html>
