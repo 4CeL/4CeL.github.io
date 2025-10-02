@@ -22,18 +22,16 @@ body {
 
 }
 
-/* Tambahkan ini ke CSS Anda */
 #home, #about, #project, #certification, #contact {
-  scroll-margin-top: 100px; /* Sesuaikan nilainya dengan tinggi navbar Anda */
+  scroll-margin-top: 100px;
 }
 
 #skills {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 50px;
 }
 
 /* --- Navigasi Bar --- */
 header {
-    /* BARU: Wrapper untuk memusatkan navbar */
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -47,7 +45,6 @@ header {
 }
 
 .navbar {
-    /* DIUBAH: Menjadi container kapsul */
     background-color: #E5E5E5;
     padding: 8px;
     border-radius: 50px; /* Membuat sudut sangat bulat seperti kapsul */
@@ -64,7 +61,6 @@ header {
 }
 
 .navbar a {
-    /* DIUBAH: Menggunakan flexbox untuk ikon dan teks */
     display: flex;
     align-items: center;
     gap: 8px; /* Jarak antara ikon dan teks */
@@ -76,20 +72,17 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* EFEK HOVER YANG DIMINTA */
 .navbar a:hover {
     color: #FFFFFF;
     background-color: var(--nav-hover-bg);
 }
 
 .navbar a.active {
-    /* DIUBAH: Gaya untuk item yang aktif */
     background-color: var(--primary-color);
     color: var(--bg-color); /* Teks menjadi putih */
 }
 
 .navbar a.active:hover {
-    /* Menjaga warna saat di-hover jika aktif */
     background-color: #1A202C; /* Sedikit lebih gelap */
     color: var(--bg-color);
 }
@@ -207,6 +200,7 @@ h2 {
 }
 
 .btn {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 8px;
@@ -216,7 +210,6 @@ h2 {
 }
 
 .btn-primary {
-    /* background-color: #E6FFFA; */
     background-color: #F4743B;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
@@ -229,7 +222,6 @@ h2 {
 }
 
 .btn-secondary {
-    /* background-color: #E6FFFA; */
     background-color: #F4743B;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
@@ -313,7 +305,7 @@ h2 {
 /* --- About Section --- */
 .about-section {
     display: flex;
-    align-items: flex-start; /* Ubah ke flex-start agar konten tidak meregang */
+    align-items: flex-start;
     gap: 50px;
     max-width: 1100px;
     margin: 100px auto; /* Memberi jarak dari section sebelumnya */
@@ -354,7 +346,7 @@ h2 {
 /* Grid untuk informasi detail */
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom sama lebar */
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-bottom: 40px;
     border-top: 1px solid var(--border-color);
@@ -420,7 +412,6 @@ h2 {
 
 /* Penyesuaian untuk Tombol */
 .btn {
-    /* Menambahkan flexbox agar ikon dan teks sejajar */
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -457,7 +448,7 @@ h2 {
 
 @media (max-width: 576px) {
     .info-grid {
-        grid-template-columns: 1fr; /* Ubah menjadi 1 kolom di layar sangat kecil */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
     
@@ -495,11 +486,12 @@ h2 {
 
 /* Grid Layout untuk Kartu Proyek */
 .project-grid {
-    display: grid;
-    /* Membuat kolom responsif: minimal 320px, maksimal 1fr (membagi rata ruang) */
+    display: grid;    /* Membuat kolom responsif: minimal 320px, maksimal 1fr (membagi rata ruang) */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px; /* Jarak antar kartu */
+    margin-bottom: 30px;
 }
+
 
 /* Styling untuk Setiap Kartu Proyek */
 .project-card {
@@ -546,9 +538,8 @@ h2 {
     line-height: 1.7;
     color: var(--secondary-color);
     margin-bottom: 25px;
-    /* Batasi deskripsi hanya 3 baris untuk kerapian */
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 8;
     line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
@@ -1014,7 +1005,6 @@ h2 {
     font-size: 28px;
 }
 
-/* --- Warna Spesifik untuk Ikon (Opsional tapi disarankan) --- */
 .html-icon { color: #E34F26; }
 .css-icon { color: #1572B6; }
 .js-icon { color: #F7DF1E; }
@@ -1032,4 +1022,56 @@ h2 {
     .skills-container {
         grid-template-columns: 1fr; /* Hanya 1 kolom di mobile */
     }
+}
+
+
+.c-lang-icon { color: #5C6BC0; }
+.python-icon { color: #3776AB; }
+.html-icon { color: #E34F26; }
+.css-icon { color: #1572B6; }
+.iot-icon { color: #17A2B8;}
+.teamwork-icon { color: #2980B9; }       /* Biru untuk kolaborasi */
+.problem-solving-icon { color: #F1C40F; } /* Kuning untuk ide/solusi */
+.communication-icon { color: #2ECC71; }   /* Hijau untuk komunikasi */
+.time-management-icon { color: #8E44AD; } /* Ungu untuk organisasi */
+.adaptability-icon { color: #E67E22; }    /* Oranye untuk dinamisme */
+
+/* Menambahkan transisi agar animasi hover mulus */
+.skill-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Menambahkan efek terangkat dan bayangan saat hover */
+.skill-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* --- Animasi Garis Bawah Judul Section --- */
+
+.section-header h2 {
+    position: relative; /* Diperlukan agar posisi ::after bisa diatur */
+    display: inline-block; /* Agar garis tidak selebar halaman */
+    padding-bottom: 10px; /* Memberi jarak antara teks dan garis */
+}
+
+.section-header h2::after {
+    content: ''; /* Wajib ada untuk pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Mulai dari tengah */
+    transform: translateX(-50%); /* Posisikan tepat di tengah */
+    
+    width: 0; /* Awalnya, lebar garis adalah 0 */
+    height: 4px; /* Ketebalan garis */
+    background-color: var(--primary-color); /* Warna garis (bisa diganti) */
+    border-radius: 2px;
+    
+    /* Ini adalah kunci animasinya */
+    transition: width 0.5s ease-in-out;
+}
+
+.section-header h2.visible::after {
+    width: 100px; /* Lebar garis akan memanjang hingga 80px */
 }

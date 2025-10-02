@@ -102,3 +102,35 @@ window.addEventListener("scroll", updateActiveNav);
 
 // Jalankan fungsi sekali saat halaman pertama kali dimuat
 document.addEventListener("DOMContentLoaded", updateActiveNav);
+
+// Opsi untuk Intersection Observer
+const options = {
+    root: null, 
+    rootMargin: '0px',
+    threshold: 0.5 
+};
+
+// Fungsi yang akan dijalankan saat elemen terlihat atau tidak terlihat
+const callback = (entries, observer) => {
+    entries.forEach(entry => {
+        // Cek apakah elemen sedang terlihat di layar
+        if (entry.isIntersecting) {
+            // Jika YA, tambahkan kelas 'visible' untuk memunculkan garis
+            entry.target.classList.add('visible');
+        } else {
+            // Jika TIDAK, hapus kelas 'visible' untuk menghilangkan garis
+            entry.target.classList.remove('visible');
+        }
+    });
+};
+
+// Buat observer baru
+const observer = new IntersectionObserver(callback, options);
+
+// Pilih semua elemen yang ingin diamati
+const targets = document.querySelectorAll('.section-header h2');
+
+// Mulai amati setiap elemen
+targets.forEach(target => {
+    observer.observe(target);
+});
